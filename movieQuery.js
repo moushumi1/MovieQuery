@@ -22,13 +22,13 @@ var newMovie = {title:"Wonder Woman",year:"2017",length:170,rating: "8.7",genere
 console.log(addMovie(newMovie));
 
 function movieByRating(a,b){
-  var genreA=a.rating;
-  var genreB=b.rating;
+  var ratingA=a.rating;
+  var ratingB=b.rating;
 
   var comparison = 0;
-  if (genreA > genreB) {
+  if (ratingA > ratingB) {
     comparison = 1;
-  } else if (genreA < genreB) {
+  } else if (ratingA < ratingB) {
     comparison = -1;
     }
     return comparison*-1;
@@ -58,3 +58,4 @@ function findByTitle( title){
 }
 var name = prompt('Input a keyword for search(The first letter should be capital eg. The)');
 console.log(findByTitle(name));
+
